@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="recipe-container" id="recipe-display">
+        <!-- Recipe will be displayed here -->
+    </div>
+    
+    <div class="chat-container">
+        <div class="chat-messages" id="chat-messages">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="user-input" placeholder="Describe the type of food you're looking for...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
